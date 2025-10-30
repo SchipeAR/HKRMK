@@ -1,1 +1,32 @@
+# Echoes of the Deep
 
+Prototipo de metroidvania inspirado en *Hollow Knight* construido con Godot 4.
+
+## Estructura del proyecto
+
+- `project.godot`: configuración principal del proyecto.
+- `src/main.tscn`: escena raíz que instancia al jugador, el HUD y la sala inicial.
+- `src/core/`: scripts de soporte (`GameState.gd` para el estado global y `Main.gd` para la lógica de arranque).
+- `src/actors/`: escenas y scripts del jugador y enemigos.
+- `src/world/`: salas (`rooms`) y elementos interactivos (`props`).
+- `src/ui/`: interfaz de usuario (HUD).
+
+## Contenido jugable
+
+- Movimiento del jugador con salto, salto coyote, buffer de salto, doble salto (una vez desbloqueado), dash y ataque cuerpo a cuerpo.
+- Enemigo volador patrullando (`FeralFly`) con IA simple.
+- Coleccionable de geo (`GeoShard`) que incrementa la moneda global.
+- HUD que muestra la salud y el geo actual.
+
+## Cómo abrir el proyecto
+
+1. Instala [Godot 4.2](https://godotengine.org/download).
+2. Desde el lanzador, elige **Importar** y selecciona el archivo `project.godot` en la raíz del repositorio.
+3. Ejecuta la escena principal (`src/main.tscn`).
+
+## Próximos pasos sugeridos
+
+- Añadir más salas conectadas y un sistema de puertas/transiciones.
+- Incluir animaciones y arte definitivos para los personajes.
+- Implementar checkpoints y sistema de guardado.
+- Expandir el bestiario con nuevos enemigos y comportamientos.
